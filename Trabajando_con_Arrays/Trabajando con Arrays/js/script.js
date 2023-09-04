@@ -38,8 +38,11 @@ function showList(array) {
 
 document.addEventListener("DOMContentLoaded", (e) => {
   // Escribe tu solución aquí
-  const filtrarElementos = strangeArray.filter(item => typeof item === "string");
-  filtrarElementos.sort((a, b) => a.localeCompare(b));
+  const filtrarElementos = strangeArray.filter(item => typeof item === "string"); /* iltra del array "strangeArray" los elementos de tipo string, 
+  incluyendolos en el nuevo array "filtrarElementos".*/
+  filtrarElementos.sort((a, b) => a.localeCompare(b)); /* se encarga de ordenar los elementos en el array filtrarElementos alfabéticamente utilizando 
+  un método de comparación que tiene en cuenta las reglas de ordenación del idioma especificado, lo que garantiza un ordenamiento más preciso, 
+  especialmente cuando se trata de cadenas de texto que contienen caracteres acentuados o especiales. */
   
   // Sugerencia de cómo mostrar el array => showList(strangeArray);
   showList(filtrarElementos);
